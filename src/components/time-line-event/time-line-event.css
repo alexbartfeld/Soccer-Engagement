@@ -19,8 +19,9 @@
   position: absolute;
   width: var(--container-width);
   right: calc(-1 * (var(--container-padding) + (var(--container-width) / 2) + (var(--container-border))));
-  background-color: var(--color-1);
-  border: var(--container-border) solid var(--color-1);
+  background-color: var(--background-color-6);
+  border: var(--container-border) solid var(--background-color-6);
+  border-radius: 50%;
   top: 0;
   z-index: 1;
 }

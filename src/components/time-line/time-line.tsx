@@ -35,7 +35,6 @@ export class TimeLine {
     } else {
       return (
         <Host>
-          <vff-score-board/>
           <div class="timeline__live">
             <button class="timeline__live-btn" type="button">LIVE</button>
           </div>

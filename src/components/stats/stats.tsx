@@ -10,7 +10,6 @@ export class Stats {
   render() {
     return (
       <Host>
-        <vff-score-board/>
         <slot></slot>
       </Host>
     );

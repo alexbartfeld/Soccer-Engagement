@@ -24,9 +24,16 @@
 
   --tabs-height: 50px;
 
-  --background-color-1: #013e55;
-  --background-color-2: #021321;
+  --scrore-board-height: 80px;
+
+  --background-color-1: rgba(1, 62, 85, 1);
+  --background-color-2: rgba(2, 19, 33, 1);
   --background-color-3: #04667a;
+
+  --background-color-4: rgba(0, 36, 57, 1);
+  --background-color-5: rgba(0, 6, 13, 1);
+
+  --background-color-6: rgba(0, 30, 51, 1) ;
 }
 
 body {
