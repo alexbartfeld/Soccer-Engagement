@@ -9,13 +9,6 @@ export class TimeLine {
   @Element() el: HTMLElement;
   @State() events: object[] = [];
 
-  /*componentWillLoad() {
-    // append left and right classes to events to position them respectively
-    Array.prototype.forEach.call(this.el.children, ((event, i) => {
-      event.classList.add((i % 2 === 0) ? 'right' : 'left');
-    }));
-  }*/
-
   componentWillLoad() {
     return fetch('http://127.0.0.1:8080/game_events.json')
       .then(response => response.json())

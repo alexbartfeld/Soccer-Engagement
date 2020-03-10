@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import {Component, Host, h, State} from '@stencil/core';
 
 @Component({
   tag: 'vff-score-board',
@@ -6,11 +6,26 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true
 })
 export class ScoreBoard {
+  @State() home_team = {};
+  @State() away_team = {};
+
+  componentWillLoad() {
+    return fetch('http://127.0.0.1:8080/score_board.json')
+      .then(response => response.json())
+      .then(json => {
+        this.home_team = json.home;
+        this.away_team = json.away;
+      }).catch(err => {
+        return err;
+      });
+  }
 
   render() {
     return (
       <Host>
-        <slot></slot>
+        <vff-score-board-item class='home_team' props={this.home_team}/>
+        <span>-</span>
+        <vff-score-board-item class='away_team' props={this.away_team}/>
       </Host>
     );
   }

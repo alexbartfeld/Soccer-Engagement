@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  flex-basis: 50%;
+  color: var(--color-2);
+  align-items: center;
+  justify-content: space-around;
+}
+
+:host(.home-team) {
+  flex-direction: row;
+}
+
+:host(.away_team) {
+  flex-direction: row-reverse;
+}
+
+img {
+  display: block;
+  height: 50px;
+}
+
+#name{
+  max-width: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#score {
+  font-size: xx-large;
+}
+

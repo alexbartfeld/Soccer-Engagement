@@ -4,7 +4,8 @@ import {event_types, event_images} from "./event-types";
 @Component({
   tag: 'vff-time-line-event',
   styleUrl: 'time-line-event.css',
-  shadow: true
+  shadow: true,
+  assetsDirs: ['assets-tl']
 })
 export class TimeLineEvent {
   @Prop() props;
