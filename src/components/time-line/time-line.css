@@ -1,0 +1,55 @@
+:host {
+  position: relative;
+  display: block;
+  background-color: var(--color-1);
+  overflow: scroll;
+  height: 100%;
+}
+
+:host(*) {
+  user-select: none;
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  padding: 30px 0 20px 0;
+  position: relative;
+  /*max-width: 1200px;*/
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: var(--timeline-width);
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: calc(-1 * (var(--timeline-width) / 2));
+}
+
+
+.timeline__live {
+  text-align: center;
+  z-index: 10;
+  padding: 20px 0;
+  background-color: var(--color-1);
+  color: var(--color-2);
+}
+
+.timeline__live-btn {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: var(--color-2);
+  cursor: pointer;
+  outline: none;
+}
+
+.no-data {
+  text-align: center;
+  color: var(--color-2);
+}

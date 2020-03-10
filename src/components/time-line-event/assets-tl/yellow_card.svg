@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.739" height="8.397" viewBox="0 0 8.739 8.397">
+  <g id="_2_Y_Cards" data-name="2_Y_Cards" transform="translate(-98.264 -431.199)">
+    <g id="Yello" transform="matrix(0.985, 0.174, -0.174, 0.985, 99.48, 431.517)" fill="#f6ff00" stroke="#9da200" stroke-width="0.5">
+      <rect width="5" height="7" rx="1" stroke="none"/>
+      <rect x="0.25" y="0.25" width="4.5" height="6.5" rx="0.75" fill="none"/>
+    </g>
+    <g id="Yello-2" data-name="Yello" transform="translate(102.4 431.199) rotate(23)" fill="#f6ff00" stroke="#9da200" stroke-width="0.5">
+      <rect width="5" height="7" rx="1" stroke="none"/>
+      <rect x="0.25" y="0.25" width="4.5" height="6.5" rx="0.75" fill="none"/>
+    </g>
+  </g>
+</svg>

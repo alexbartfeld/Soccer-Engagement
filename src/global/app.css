@@ -1,0 +1,51 @@
+/*
+  Global App CSS
+  ----------------------
+  Use this file for styles that should be applied to all components.
+  For example, "font-family" within the "body" selector is a CSS property
+  most apps will want applied to all components.
+
+  Any global CSS variables should also be applied here.
+*/
+
+:root {
+  --color-1: #474e5d;
+  --color-2: #fff;
+  --color-3: #232634;
+
+  --color-game-stat-even-item: #AB9C99;
+  --color-game-stat-odd-item: #BEAFAC;
+
+  --timeline-width: 2px;
+
+  --container-padding: 10px;
+  --container-width: 20px;
+  --container-border: 4px;
+
+  --tabs-height: 50px;
+
+  --background-color-1: #013e55;
+  --background-color-2: #021321;
+  --background-color-3: #04667a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+vff-sport-fan {
+  position: relative;
+  height: 70vh;
+  bottom: -30vh;
+  overflow: scroll;
+}
+
+vff-tabs {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: var(--tabs-height);
+  z-index: 100;
+}

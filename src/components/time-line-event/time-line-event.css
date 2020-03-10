@@ -1,0 +1,83 @@
+:host {
+  cursor: pointer;
+  color: var(--color-2);
+  margin-bottom: 50px !important;
+  padding: 10px 20px !important;
+  background-color: inherit;
+  width: 50%;
+  position: relative;
+  display: block;
+}
+
+/* The circles on the timeline */
+:host::after {
+  font-size: 20px;
+  content: attr(time) "'";
+  color: white;
+  padding: var(--container-padding);
+  text-align: center;
+  position: absolute;
+  width: var(--container-width);
+  right: calc(-1 * (var(--container-padding) + (var(--container-width) / 2) + (var(--container-border))));
+  background-color: var(--color-1);
+  border: var(--container-border) solid var(--color-1);
+  top: 0;
+  z-index: 1;
+}
+
+/* Fix the circle for containers on the right side */
+:host(.right)::after {
+  left: calc(-1 * (var(--container-padding) + (var(--container-width) / 2) + (var(--container-border))));
+}
+
+:host(*) {
+  user-select: none;
+  box-sizing: border-box;
+}
+
+#event {
+  font-size: 14px;
+  color: var(--color-2);
+  position: relative;
+  border-radius: 6px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  top: calc(var(--container-padding) / 2);
+}
+
+:host(.left) #event {
+  flex-direction: row-reverse;
+}
+
+/* Place the container to the left */
+:host(.left) {
+  left: 0;
+  text-align: right;
+}
+
+/* Place the container to the right */
+:host(.right) {
+  left: 50%;
+}
+
+:host(.left) #image {
+  margin: 0 4px 0 12px;;
+}
+
+:host(.right) #image {
+  margin: 0 10px;
+}
+
+#text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+img {
+  display: block;
+  height: 23px;
+}

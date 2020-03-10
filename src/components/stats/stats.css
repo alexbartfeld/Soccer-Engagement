@@ -1,0 +1,17 @@
+:host {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+:host(*) {
+  box-sizing: border-box;
+}
+
+vff-stat-item:nth-child(even) {
+  background-color: var(--color-game-stat-even-item);
+}
+
+vff-stat-item:nth-child(odd) {
+  background-color: var(--color-game-stat-odd-item);
+}

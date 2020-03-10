@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6.14" height="7.762" viewBox="0 0 6.14 7.762">
+  <g id="R_Card" transform="translate(-98.264 -431.517)">
+    <g id="Yello" transform="matrix(0.985, 0.174, -0.174, 0.985, 99.48, 431.517)" fill="#f6ff00" stroke="#9da200" stroke-width="0.5">
+      <rect width="5" height="7" rx="1" stroke="none"/>
+      <rect x="0.25" y="0.25" width="4.5" height="6.5" rx="0.75" fill="none"/>
+    </g>
+    <g id="Red" transform="matrix(0.985, 0.174, -0.174, 0.985, 99.48, 431.517)" fill="red" stroke="#a20000" stroke-width="0.5">
+      <rect width="5" height="7" rx="1" stroke="none"/>
+      <rect x="0.25" y="0.25" width="4.5" height="6.5" rx="0.75" fill="none"/>
+    </g>
+  </g>
+</svg>
