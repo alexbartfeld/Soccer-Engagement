@@ -1,0 +1,21 @@
+{
+  "yellow_cards": "0:1",
+  "red_cards": "0:0",
+  "substitutions": "3:1",
+  "possesion": "48:52",
+  "free_kicks": "10:13",
+  "goal_kicks": "11:6",
+  "throw_ins": "21:18",
+  "offsides": "3:5",
+  "corners": "4:13",
+  "shots_on_target": "5:3",
+  "shots_off_target": "4:8",
+  "attempts_on_goal": "9:11",
+  "saves": "2:2",
+  "fauls": "10:5",
+  "treatments": "1:0",
+  "penalties": "0:0",
+  "shots_blocked": "3:8",
+  "dangerous_attacks": "33:56",
+  "attacks": "82:91"
+}

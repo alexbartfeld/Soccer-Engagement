@@ -2,16 +2,27 @@
   height: 100%;
   width: 100%;
   display: block;
+  overflow: scroll;
+  color: var(--color-2);
 }
 
 :host(*) {
   box-sizing: border-box;
 }
 
+#title {
+  padding: 10px 0;
+}
+
 vff-stat-item:nth-child(even) {
-  background-color: var(--color-game-stat-even-item);
+  background-color: var(--background-color-4);
 }
 
 vff-stat-item:nth-child(odd) {
-  background-color: var(--color-game-stat-odd-item);
+  background-color: var(--background-color-2);
+}
+
+#title {
+  text-align: center;
+  font-size: 20px;
 }

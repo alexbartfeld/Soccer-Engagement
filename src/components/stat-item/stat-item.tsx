@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import {Component, Host, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 'vff-stat-item',
@@ -6,11 +6,16 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true
 })
 export class StatItem {
+  @Prop() props;
 
   render() {
+    const {name, home, away} = this.props;
+
     return (
       <Host>
-        <slot></slot>
+        <div id='home_value'>{home}</div>
+        <div id='stat_name'>{name}</div>
+        <div id='away_value'>{away}</div>
       </Host>
     );
   }

@@ -18,7 +18,9 @@ export namespace Components {
     'props': any;
   }
   interface VffSportFan {}
-  interface VffStatItem {}
+  interface VffStatItem {
+    'props': any;
+  }
   interface VffStats {}
   interface VffTab {
     'imgSrc': string;
@@ -116,7 +118,9 @@ declare namespace LocalJSX {
     'props'?: any;
   }
   interface VffSportFan {}
-  interface VffStatItem {}
+  interface VffStatItem {
+    'props'?: any;
+  }
   interface VffStats {}
   interface VffTab {
     'imgSrc'?: string;
