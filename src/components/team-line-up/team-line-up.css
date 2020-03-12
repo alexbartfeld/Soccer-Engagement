@@ -1,0 +1,8 @@
+:host {
+  display: block;
+  overflow: scroll;
+}
+
+:host(*){
+  box-sizing: border-box;
+}

@@ -25,4 +25,5 @@ vff-stat-item:nth-child(odd) {
 #title {
   text-align: center;
   font-size: 20px;
+  background-color: var(--background-color-4);
 }

@@ -1,0 +1,66 @@
+:host {
+  display: block;
+  color: var(--color-2);
+}
+
+:host(*) {
+  box-sizing: border-box;
+}
+
+#formation-container {
+  width: 100%;
+  margin: auto;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+}
+
+#field {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.right,
+.left {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-around;
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.left {
+  flex-direction: row;
+}
+
+.column, .goal-keeper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: calc(8px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.player {
+  background-color: black;
+  position: relative;
+  display: inline-block;
+  width: calc(12px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+  height: 0;
+  padding: 50% 9%;
+  border-radius: 50%;
+  line-height: 0;
+  text-align: center;
+  border: 1px solid var(--color-2);
+}
+
+.player:after{
+  content: attr(data-name);
+  position: absolute;
+  bottom: calc(-1*(12px + (14 - 14) * ((100vw - 300px) / (1600 - 300))));
+  right: -8px;
+}
