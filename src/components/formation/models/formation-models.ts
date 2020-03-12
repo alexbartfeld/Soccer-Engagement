@@ -6,5 +6,6 @@ export interface TeamPlayer {
 export interface TeamFormation {
   team_color: string
   goal_keeper: TeamPlayer
-  team_formation: TeamPlayer[][]
+  formation_details: TeamPlayer[][]
+  formation: string
 }

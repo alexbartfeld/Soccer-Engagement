@@ -1,6 +1,99 @@
 {
+  "home": {
+    "players": [
+      {
+        "name": "Manuel Neuer",
+        "substitution": "0",
+        "shirt_number": "1"
+      },
+      {
+        "name": "Benjamin Pavard",
+        "substitution": "0",
+        "shirt_number": "5"
+      },
+      {
+        "name": "Javi Martinez",
+        "substitution": "0",
+        "shirt_number": "8"
+      },
+      {
+        "name": "David Alaba",
+        "substitution": "0",
+        "shirt_number": "27"
+      },
+      {
+        "name": "Alphonso Davies",
+        "substitution": "0",
+        "shirt_number": "19"
+      },
+      {
+        "name": "Joshua Kimmich",
+        "substitution": "0",
+        "shirt_number": "32"
+      },
+      {
+        "name": "Thomas Müller",
+        "substitution": "0",
+        "shirt_number": "25"
+      },
+      {
+        "name": "Serge Gnabry",
+        "substitution": "0",
+        "shirt_number": "22"
+      },
+      {
+        "name": "Leon Goretzka",
+        "substitution": "0",
+        "shirt_number": "18"
+      },
+      {
+        "name": "Kingsley Coman",
+        "substitution": "0",
+        "shirt_number": "29"
+      },
+      {
+        "name": "Robert Lewandowski",
+        "substitution": "0",
+        "shirt_number": "9"
+      },
+      {
+        "name": "Sven Ulreich",
+        "substitution": "1",
+        "shirt_number": "26"
+      },
+      {
+        "name": "Lars Lukas Mai",
+        "substitution": "1",
+        "shirt_number": "33"
+      },
+      {
+        "name": "Thiago",
+        "substitution": "1",
+        "shirt_number": "6"
+      },
+      {
+        "name": "Corentin Tolisso",
+        "substitution": "1",
+        "shirt_number": "24"
+      },
+      {
+        "name": "Philippe Coutinho",
+        "substitution": "1",
+        "shirt_number": "10"
+      },
+      {
+        "name": "Ivan Perišić",
+        "substitution": "1",
+        "shirt_number": "14"
+      },
+      {
+        "name": "Michaël Cuisance",
+        "substitution": "1",
+        "shirt_number": "11"
+      }
+    ]
+  },
   "away": {
-    "formation": "3-4-2-1",
     "players": [
       {
         "name": "Roman Bûrki",
@@ -106,101 +199,6 @@
         "name": "Axel Witsel",
         "substitution": "1",
         "shirt_number": "28"
-      }
-    ]
-  },
-  "home": {
-    "formation": "2-4-3-1",
-    "players": [
-      {
-        "name": "Manuel Neuer",
-        "substitution": "0",
-        "shirt_number": "1"
-      },
-      {
-        "name": "Benjamin Pavard",
-        "substitution": "0",
-        "shirt_number": "5"
-      },
-      {
-        "name": "Javi Martinez",
-        "substitution": "0",
-        "shirt_number": "8"
-      },
-      {
-        "name": "David Alaba",
-        "substitution": "0",
-        "shirt_number": "27"
-      },
-      {
-        "name": "Alphonso Davies",
-        "substitution": "0",
-        "shirt_number": "19"
-      },
-      {
-        "name": "Joshua Kimmich",
-        "substitution": "0",
-        "shirt_number": "32"
-      },
-      {
-        "name": "Thomas Müller",
-        "substitution": "0",
-        "shirt_number": "25"
-      },
-      {
-        "name": "Serge Gnabry",
-        "substitution": "0",
-        "shirt_number": "22"
-      },
-      {
-        "name": "Leon Goretzka",
-        "substitution": "0",
-        "shirt_number": "18"
-      },
-      {
-        "name": "Kingsley Coman",
-        "substitution": "0",
-        "shirt_number": "29"
-      },
-      {
-        "name": "Robert Lewandowski",
-        "substitution": "0",
-        "shirt_number": "9"
-      },
-      {
-        "name": "Sven Ulreich",
-        "substitution": "1",
-        "shirt_number": "26"
-      },
-      {
-        "name": "Lars Lukas Mai",
-        "substitution": "1",
-        "shirt_number": "33"
-      },
-      {
-        "name": "Thiago",
-        "substitution": "1",
-        "shirt_number": "6"
-      },
-      {
-        "name": "Corentin Tolisso",
-        "substitution": "1",
-        "shirt_number": "24"
-      },
-      {
-        "name": "Philippe Coutinho",
-        "substitution": "1",
-        "shirt_number": "10"
-      },
-      {
-        "name": "Ivan Perišić",
-        "substitution": "1",
-        "shirt_number": "14"
-      },
-      {
-        "name": "Michaël Cuisance",
-        "substitution": "1",
-        "shirt_number": "11"
       }
     ]
   }

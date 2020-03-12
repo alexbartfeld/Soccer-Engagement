@@ -7,14 +7,31 @@
   box-sizing: border-box;
 }
 
-#formation-container {
+#formation__container {
   width: 100%;
+  flex-direction: column;
   margin: auto;
-  background-size: cover;
   display: flex;
+}
+
+
+#formation__title {
+  display: flex;
+}
+
+#formation__title--left,
+#formation__title--right {
+  text-align: center;
+  flex-basis: 50%;
+  padding: 5px 0;
+}
+
+#formation__details {
+  width: 100%;
   flex-direction: row;
   justify-content: space-around;
   position: relative;
+  display: flex;
 }
 
 #field {
@@ -58,9 +75,9 @@
   border: 1px solid var(--color-2);
 }
 
-.player:after{
+.player:after {
   content: attr(data-name);
   position: absolute;
-  bottom: calc(-1*(12px + (14 - 14) * ((100vw - 300px) / (1600 - 300))));
+  bottom: calc(-1 * (12px + (14 - 14) * ((100vw - 300px) / (1600 - 300))));
   right: -8px;
 }

@@ -39,7 +39,7 @@ export class Formation {
   }
 
   componentDidRender() {
-    this.formationContainer = this.el.shadowRoot.querySelector('#formation-container');
+    this.formationContainer = this.el.shadowRoot.querySelector('#formation__container');
     this.width = this.formationContainer.getBoundingClientRect().width;
   }
 
@@ -57,7 +57,7 @@ export class Formation {
     const result = [];
     const teamColor = team.team_color || '#000';
     const goalKeeper = team.goal_keeper;
-    const teamFormation = team.team_formation;
+    const teamFormation = team.formation_details;
 
     const playerFormat = function (num, name) {
       return (
@@ -86,10 +86,16 @@ export class Formation {
     const height = this.height + 'px';
     return (
       <Host>
-        <div id="formation-container" style={{height}}>
-          <img id="field" src={getAssetPath("./assets-fr/soccer_field_bg.svg")}/>
-          <div class="left">{this.renderFormation(this.leftTeam)}</div>
-          <div class="right">{this.renderFormation(this.rightTeam)}</div>
+        <div id="formation__container">
+          <div id='formation__title'>
+            <div id='formation__title--left'>{this.leftTeam.formation}</div>
+            <div id='formation__title--right'>{this.rightTeam.formation}</div>
+          </div>
+          <div id='formation__details' style={{height}}>
+            <img id="field" src={getAssetPath("./assets-fr/soccer_field_bg.svg")}/>
+            <div class="left">{this.renderFormation(this.leftTeam)}</div>
+            <div class="right">{this.renderFormation(this.rightTeam)}</div>
+          </div>
         </div>
       </Host>
     );

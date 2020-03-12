@@ -5,7 +5,7 @@
       "name": "Manuel Neuer",
       "shirt_number": "1"
     },
-    "team_formation": [
+    "formation_details": [
       [
         {
           "name": "Benjamin Pavard",
@@ -54,7 +54,8 @@
           "shirt_number": "9"
         }
       ]
-    ]
+    ],
+    "formation": "2-4-3-1"
   },
   "rightTeam": {
     "team_color": "#ad0204",
@@ -62,7 +63,7 @@
       "name": "Roman Bürki",
       "shirt_number": "1"
     },
-    "team_formation": [
+    "formation_details": [
       [
         {
           "name": "Dan-Axel Zagadou",
@@ -111,6 +112,7 @@
           "shirt_number": "15"
         }
       ]
-    ]
+    ],
+    "formation": "3-4-2-1"
   }
 }
