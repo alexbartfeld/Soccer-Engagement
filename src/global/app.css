@@ -47,7 +47,6 @@ vff-sport-fan {
   position: relative;
   height: 70vh;
   bottom: -30vh;
-  overflow: scroll;
 }
 
 vff-tabs {

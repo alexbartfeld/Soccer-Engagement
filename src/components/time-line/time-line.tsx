@@ -10,7 +10,7 @@ export class TimeLine {
   @State() events: object[] = [];
 
   componentWillLoad() {
-    return fetch('http://127.0.0.1:8080/game_events.json')
+    return fetch('http://10.0.0.3:8080/game_events.json')
       .then(response => response.json())
       .then(json => {
         if (json.success) {

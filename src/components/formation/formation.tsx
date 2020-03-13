@@ -23,7 +23,7 @@ export class Formation {
   @Element() el: HTMLElement;
 
   componentWillLoad() {
-    return fetch('http://127.0.0.1:8080/teams_formation.json')
+    return fetch('http://10.0.0.3:8080/teams_formation.json')
       .then(response => response.json())
       .then(json => {
         this.leftTeam = json.leftTeam;
