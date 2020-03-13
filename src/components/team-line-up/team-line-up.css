@@ -1,8 +1,47 @@
 :host {
   display: block;
-  overflow: scroll;
+  height: 100%;
+  color: var(--color-2);
 }
 
-:host(*){
+:host(*) {
   box-sizing: border-box;
 }
+
+vff-formation{
+  margin-bottom: 8px;
+}
+
+.left,
+.right{
+  flex-basis: 50%;
+}
+
+#substitutes,
+#line-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.player{
+  padding: 5px 0;
+}
+
+.player__num{
+  padding: 0 10px;
+}
+
+#line-up .right .player,
+#substitutes .right .player{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#substitutes__title {
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  padding: 23px 0 4px 0;
+  text-align: center;
+}
+

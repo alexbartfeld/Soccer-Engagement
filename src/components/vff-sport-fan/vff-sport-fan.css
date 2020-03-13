@@ -12,3 +12,9 @@ main {
   background: linear-gradient(90deg, var(--background-color-4) 35%, var(--background-color-5) 100%);
   height: calc(100% - var(--scrore-board-height));
 }
+
+#engagement-feature vff-time-line,
+#engagement-feature vff-team-line-up,
+#engagement-feature vff-stats{
+  overflow: scroll;
+}
