@@ -34,7 +34,7 @@
   --background-color-4: rgba(0, 36, 57, 1);
   --background-color-5: rgba(0, 6, 13, 1);
 
-  --background-color-6: rgba(0, 30, 51, 1) ;
+  --background-color-6: rgba(0, 30, 51, 1);
 }
 
 body {
@@ -52,6 +52,7 @@ vff-sport-fan {
 
 vff-tabs {
   position: fixed;
+  bottom: 0;
   left: 0;
   right: 0;
   height: var(--tabs-height);

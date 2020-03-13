@@ -23,23 +23,19 @@ export class TimeLine {
 
 
   render() {
-    if (this.events.length === 0) {
-      return (<vff-loader/>)
-    } else {
-      return (
-        <Host>
-          <div class="timeline__live">
-            <button class="timeline__live-btn" type="button">LIVE</button>
-          </div>
-          <div class="timeline">
-            {
-              this.events.reverse().map(event => {
-                return (<vff-time-line-event props={event}/>)
-              })
-            }
-          </div>
-        </Host>
-      );
-    }
+    return (
+      <Host>
+        <div class="timeline__live">
+          <button class="timeline__live-btn" type="button">LIVE</button>
+        </div>
+        <div class="timeline">
+          {
+            this.events.reverse().map(event => {
+              return (<vff-time-line-event props={event}/>)
+            })
+          }
+        </div>
+      </Host>
+    );
   }
 }
