@@ -1,4 +1,4 @@
-import {Component, Host, h, State, getAssetPath, Element, Watch, Listen} from '@stencil/core';
+import {Component, Host, h, State, getAssetPath, Element} from '@stencil/core';
 import {TeamFormation, TeamPlayer} from "./models/formation-models";
 
 function nameFormat(name) {
@@ -20,11 +20,6 @@ export class Formation {
   @State() leftTeam: TeamFormation;
   @State() rightTeam: TeamFormation;
 
-  @State() width;
-  @State() height;
-
-  private formationContainer;
-
   @Element() el: HTMLElement;
 
   componentWillLoad() {
@@ -36,21 +31,6 @@ export class Formation {
       }).catch(err => {
         return err;
       });
-  }
-
-  componentDidRender() {
-    this.formationContainer = this.el.shadowRoot.querySelector('#formation__container');
-    this.width = this.formationContainer.getBoundingClientRect().width;
-  }
-
-  @Listen('resize', {target: 'window'})
-  handleResize() {
-    this.width = this.formationContainer.getBoundingClientRect().width;
-  }
-
-  @Watch('width')
-  handleWidthChange(width) {
-    this.height = width * 62.5 / 100;
   }
 
   renderFormation(team: TeamFormation) {
@@ -83,7 +63,6 @@ export class Formation {
   }
 
   render() {
-    const height = this.height + 'px';
     return (
       <Host>
         <div id="formation__container">
@@ -91,7 +70,7 @@ export class Formation {
             <div id='formation__title--left'>{this.leftTeam.formation}</div>
             <div id='formation__title--right'>{this.rightTeam.formation}</div>
           </div>
-          <div id='formation__details' style={{height}}>
+          <div id='formation__details'>
             <img id="field" src={getAssetPath("./assets-fr/soccer_field_bg.svg")}/>
             <div class="left">{this.renderFormation(this.leftTeam)}</div>
             <div class="right">{this.renderFormation(this.rightTeam)}</div>

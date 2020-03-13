@@ -28,6 +28,7 @@
 }
 
 #formation__details {
+  padding-bottom: 62.5%;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
@@ -43,16 +44,21 @@
 
 .right,
 .left {
+  height: 100%;
+  width: 50%;
+  position: absolute;
   display: flex;
   flex-basis: 50%;
   justify-content: space-around;
 }
 
 .right {
+  right: 0;
   flex-direction: row-reverse;
 }
 
 .left {
+  left: 0;
   flex-direction: row;
 }
 
