@@ -1,6 +1,6 @@
 {
   "leftTeam": {
-    "team_color": "#000",
+    "team_color": "#ad0204",
     "goal_keeper": {
       "name": "Manuel Neuer",
       "shirt_number": "1"
@@ -58,7 +58,7 @@
     "formation": "2-4-3-1"
   },
   "rightTeam": {
-    "team_color": "#ad0204",
+    "team_color": "#000",
     "goal_keeper": {
       "name": "Roman Bürki",
       "shirt_number": "1"

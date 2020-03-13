@@ -1,6 +1,6 @@
 {
   "home": {
-    "team_color": "#000",
+    "team_color": "#ad0204",
     "players": [
       {
         "name": "Manuel Neuer",
@@ -95,7 +95,7 @@
     ]
   },
   "away": {
-    "team_color": "#ad0204",
+    "team_color": "#000",
     "players": [
       {
         "name": "Roman Bûrki",
