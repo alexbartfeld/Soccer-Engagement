@@ -1,7 +1,7 @@
 import {Component, Host, h, State} from '@stencil/core';
 
 function lineUpItem(player, color, setColor, isLeft) {
-  const c = setColor ? `linear-gradient(${isLeft ? '270' : '90'}deg, rgba(255, 255, 255, 0) 0%, ${color} 100%)` : 'transparent';
+  const c = setColor ? `linear-gradient(${isLeft ? '270' : '90'}deg, rgba(0, 0, 0, 0) 0%, ${color} 100%)` : 'transparent';
 
   return (<div class='player' style={{backgroundImage: c}}>
     <span class='player__num'>{player.shirt_number}</span>
