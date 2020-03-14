@@ -9,20 +9,18 @@
   box-sizing: border-box;
 }
 
-#title {
-  padding: 10px 0;
+vff-stat-item:nth-child(odd) {
+  background-color: var(--background-color-4);
+  background-image: radial-gradient(circle, var(--background-color-7) 40%, var(--background-color-2) 100%);
 }
 
 vff-stat-item:nth-child(even) {
-  background-color: var(--background-color-4);
-}
-
-vff-stat-item:nth-child(odd) {
   background-color: var(--background-color-2);
 }
 
 #title {
+  background-color: var(--background-color-2);
+  padding: 10px 0;
   text-align: center;
   font-size: 20px;
-  background-color: var(--background-color-4);
 }
