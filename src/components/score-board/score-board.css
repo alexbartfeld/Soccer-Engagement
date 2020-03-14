@@ -3,6 +3,7 @@
   background: var(--background-color-1);
   background: linear-gradient(90deg, var(--background-color-1) 35%, var(--background-color-2) 100%);
   display: flex;
+  position: relative;
   flex-direction: row;
   color: var(--color-2);
   align-items: center;
