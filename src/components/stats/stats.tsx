@@ -22,9 +22,11 @@ export class Stats {
     return (
       <Host>
         <div id='title'>TEAM STATS</div>
-        {Object.keys(this.game_stats).map((key) => {
+        {Object.keys(this.game_stats).map((key, i) => {
           const t = this.game_stats[key].split(':');
-          return (<vff-stat-item props={{name: key, home: t[0], away: t[1]}}/>);
+          return (
+            <vff-stat-item class={i % 2 === 0 ? 'even' : 'odd'} props={{name: key, home: t[0], away: t[1]}}/>
+          );
         })}
       </Host>
     );
