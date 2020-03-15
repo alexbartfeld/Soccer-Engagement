@@ -10,7 +10,7 @@ export class ScoreBoard {
   @State() away_team = {};
 
   componentWillLoad() {
-    return fetch('http://10.0.0.3:8080/score_board.json')
+    return fetch('./build/mocks/score_board.json')
       .then(response => response.json())
       .then(json => {
         this.home_team = json.home;

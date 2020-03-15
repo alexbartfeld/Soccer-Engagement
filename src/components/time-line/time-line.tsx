@@ -1,4 +1,5 @@
 import {Component, Host, h, Element, State} from '@stencil/core';
+import {GameStatus} from "./models/time-line.models";
 
 @Component({
   tag: 'vff-time-line',
@@ -8,26 +9,30 @@ import {Component, Host, h, Element, State} from '@stencil/core';
 export class TimeLine {
   @Element() el: HTMLElement;
   @State() events: object[] = [];
+  @State() isGameLive: boolean = false;
 
   componentWillLoad() {
-    return fetch('http://10.0.0.3:8080/game_events.json')
+    return fetch('./build/mocks/game_events.json')
       .then(response => response.json())
       .then(json => {
         if (json.success) {
-          this.events = json.data.event
+          this.events = json.data.event;
+          this.isGameLive = json.data.match.status === GameStatus.LIVE;
         }
       }).catch(err => {
         return err;
       });
   }
 
-
   render() {
+    const liveButton = this.isGameLive ?
+      <div class="timeline__live">
+        <button class="timeline__live-btn" type="button">LIVE</button>
+      </div> : null;
+
     return (
       <Host>
-        <div class="timeline__live">
-          <button class="timeline__live-btn" type="button">LIVE</button>
-        </div>
+        {liveButton}
         <div class="timeline">
           {
             this.events.reverse().map(event => {

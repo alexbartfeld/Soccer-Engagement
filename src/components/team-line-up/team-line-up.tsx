@@ -18,7 +18,7 @@ export class TeamLineUp {
   @State() teamsLineUp;
 
   componentWillLoad() {
-    return fetch('http://10.0.0.3:8080/teams_lineup.json')
+    return fetch('./build/mocks/teams_lineup.json')
       .then(response => response.json())
       .then(json => {
         this.teamsLineUp = json;

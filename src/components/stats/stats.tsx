@@ -9,7 +9,7 @@ export class Stats {
   @State() game_stats = {};
 
   componentWillLoad() {
-    return fetch('http://10.0.0.3:8080/match_stats.json')
+    return fetch('./build/mocks/match_stats.json')
       .then(response => response.json())
       .then(json => {
         this.game_stats = json;
