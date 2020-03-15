@@ -15,7 +15,7 @@ export class VffSportFan {
         <main>
           <vff-score-board/>
           <div id='engagement-feature'>
-            <stencil-router>
+            <stencil-router historyType='hash'>
               <stencil-route-switch scrollTopOffset={0}>
                 <stencil-route url={routes.TIME_LINE} component='vff-time-line' exact={true}/>
                 <stencil-route url={routes.STATS} component='vff-stats'/>
