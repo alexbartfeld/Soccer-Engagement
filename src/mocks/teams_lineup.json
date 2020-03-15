@@ -1,0 +1,207 @@
+{
+  "home": {
+    "team_color": "#ad0204",
+    "players": [
+      {
+        "name": "Manuel Neuer",
+        "substitution": "0",
+        "shirt_number": "1"
+      },
+      {
+        "name": "Benjamin Pavard",
+        "substitution": "0",
+        "shirt_number": "5"
+      },
+      {
+        "name": "Javi Martinez",
+        "substitution": "0",
+        "shirt_number": "8"
+      },
+      {
+        "name": "David Alaba",
+        "substitution": "0",
+        "shirt_number": "27"
+      },
+      {
+        "name": "Alphonso Davies",
+        "substitution": "0",
+        "shirt_number": "19"
+      },
+      {
+        "name": "Joshua Kimmich",
+        "substitution": "0",
+        "shirt_number": "32"
+      },
+      {
+        "name": "Thomas Müller",
+        "substitution": "0",
+        "shirt_number": "25"
+      },
+      {
+        "name": "Serge Gnabry",
+        "substitution": "0",
+        "shirt_number": "22"
+      },
+      {
+        "name": "Leon Goretzka",
+        "substitution": "0",
+        "shirt_number": "18"
+      },
+      {
+        "name": "Kingsley Coman",
+        "substitution": "0",
+        "shirt_number": "29"
+      },
+      {
+        "name": "Robert Lewandowski",
+        "substitution": "0",
+        "shirt_number": "9"
+      },
+      {
+        "name": "Sven Ulreich",
+        "substitution": "1",
+        "shirt_number": "26"
+      },
+      {
+        "name": "Lars Lukas Mai",
+        "substitution": "1",
+        "shirt_number": "33"
+      },
+      {
+        "name": "Thiago",
+        "substitution": "1",
+        "shirt_number": "6"
+      },
+      {
+        "name": "Corentin Tolisso",
+        "substitution": "1",
+        "shirt_number": "24"
+      },
+      {
+        "name": "Philippe Coutinho",
+        "substitution": "1",
+        "shirt_number": "10"
+      },
+      {
+        "name": "Ivan Perišić",
+        "substitution": "1",
+        "shirt_number": "14"
+      },
+      {
+        "name": "Michaël Cuisance",
+        "substitution": "1",
+        "shirt_number": "11"
+      }
+    ]
+  },
+  "away": {
+    "team_color": "#000",
+    "players": [
+      {
+        "name": "Roman Bûrki",
+        "substitution": "0",
+        "shirt_number": "1"
+      },
+      {
+        "name": "Dan-Axel Zagadou",
+        "substitution": "0",
+        "shirt_number": "2"
+      },
+      {
+        "name": "Achraf Hakimi",
+        "substitution": "0",
+        "shirt_number": "5"
+      },
+      {
+        "name": "Thomas Delaney",
+        "substitution": "0",
+        "shirt_number": "6"
+      },
+      {
+        "name": "Jadon Sancho",
+        "substitution": "0",
+        "shirt_number": "7"
+      },
+      {
+        "name": "Mahmoud Dahoud",
+        "substitution": "0",
+        "shirt_number": "8"
+      },
+      {
+        "name": "Mario Götze",
+        "substitution": "0",
+        "shirt_number": "10"
+      },
+      {
+        "name": "Marco Reus",
+        "substitution": "0",
+        "shirt_number": "11"
+      },
+      {
+        "name": "Raphaël Guerreiro",
+        "substitution": "0",
+        "shirt_number": "13"
+      },
+      {
+        "name": "Nico Schulz",
+        "substitution": "0",
+        "shirt_number": "14"
+      },
+      {
+        "name": "Mats Hummels",
+        "substitution": "0",
+        "shirt_number": "15"
+      },
+      {
+        "name": "Manuel Akanji",
+        "substitution": "1",
+        "shirt_number": "16"
+      },
+      {
+        "name": "Erling Braut",
+        "substitution": "1",
+        "shirt_number": "17"
+      },
+      {
+        "name": "Leonardo Balerdi",
+        "substitution": "1",
+        "shirt_number": "18"
+      },
+      {
+        "name": "Julian Brandt",
+        "substitution": "1",
+        "shirt_number": "19"
+      },
+      {
+        "name": "Mateu Morey",
+        "substitution": "1",
+        "shirt_number": "22"
+      },
+      {
+        "name": "Thorgan Hazard",
+        "substitution": "1",
+        "shirt_number": "23"
+      },
+      {
+        "name": "Luca Unbehaun",
+        "substitution": "1",
+        "shirt_number": "25"
+      },
+      {
+        "name": "Łukasz Piszczek",
+        "substitution": "1",
+        "shirt_number": "26"
+      },
+      {
+        "name": "Emre Can",
+        "substitution": "1",
+        "shirt_number": "27"
+      },
+      {
+        "name": "Axel Witsel",
+        "substitution": "1",
+        "shirt_number": "28"
+      }
+    ]
+  }
+}

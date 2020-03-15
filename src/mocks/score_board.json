@@ -1,0 +1,12 @@
+{
+  "home": {
+    "name": "Bayern München",
+    "score": "2",
+    "img_src": "./assets-sc/Bayern_Munchen.svg"
+  },
+  "away": {
+    "name": "Dortmund",
+    "score": "1",
+    "img_src": "./assets-sc/Dortmund.svg"
+  }
+}
