@@ -20,6 +20,7 @@ export class VffSportFan {
                 <stencil-route url={routes.TIME_LINE} component='vff-time-line' exact={true}/>
                 <stencil-route url={routes.STATS} component='vff-stats'/>
                 <stencil-route url={routes.FORMATION} component='vff-team-line-up'/>
+                <stencil-route url={routes.SOCIAL} component='vff-social-embed'/>
                 <stencil-route component="vff-time-line"/>
               </stencil-route-switch>
             </stencil-router>
