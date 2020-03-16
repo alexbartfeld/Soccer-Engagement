@@ -1,4 +1,5 @@
-import {Component, Host, h, State} from '@stencil/core';
+import {Component, Host, h, State, Prop} from '@stencil/core';
+import {Store, Unsubscribe} from "@stencil/redux";
 
 @Component({
   tag: 'vff-score-board',
@@ -6,18 +7,27 @@ import {Component, Host, h, State} from '@stencil/core';
   shadow: true
 })
 export class ScoreBoard {
+  private storeUnsubscribe: Unsubscribe;
+
+  @State() scoreBoard = {};
+
+  @Prop({context: "store"})
+  store: Store;
+
   @State() home_team = {};
   @State() away_team = {};
 
   componentWillLoad() {
-    return fetch('./build/mocks/score_board.json')
-      .then(response => response.json())
-      .then(json => {
-        this.home_team = json.home;
-        this.away_team = json.away;
-      }).catch(err => {
-        return err;
-      });
+    this.storeUnsubscribe = this.store.mapStateToProps(this, (state) => {
+      const {scoreBoard} = state;
+      this.home_team = scoreBoard.home;
+      this.away_team = scoreBoard.away;
+      return {scoreBoard};
+    });
+  }
+
+  componentDidUnload() {
+    this.storeUnsubscribe();
   }
 
   render() {

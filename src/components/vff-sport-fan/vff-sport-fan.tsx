@@ -1,5 +1,10 @@
-import {Host, Component, h, Element} from '@stencil/core';
+import "@stencil/redux";
+import {Store} from "@stencil/redux";
+import {Host, Component, h, Element, Prop} from '@stencil/core';
 import {routes} from "../../routes/routes";
+import {configureStore} from "../../store";
+// Actions
+import {setTeamsInitialData} from '../../store/actions/score-board';
 
 @Component({
   tag: 'vff-sport-fan',
@@ -7,7 +12,17 @@ import {routes} from "../../routes/routes";
   shadow: true
 })
 export class VffSportFan {
+  setTeamsInitialData: typeof setTeamsInitialData;
+
   @Element() el: HTMLElement;
+
+  @Prop({context: "store"})
+  store: Store;
+
+  async componentWillLoad() {
+    this.store.mapDispatchToProps(this, {setTeamsInitialData});
+    this.store.setStore(configureStore({}));
+  }
 
   render() {
     return (
