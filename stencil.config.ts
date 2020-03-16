@@ -4,7 +4,7 @@ import {Config} from '@stencil/core';
 
 export const config: Config = {
   devServer: {
-    port: 8000
+    port: 3333
   },
   globalStyle: 'src/global/app.css',
   globalScript: 'src/global/app.ts',

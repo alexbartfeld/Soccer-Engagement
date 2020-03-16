@@ -1,0 +1,176 @@
+{
+  "teams" : [
+    {
+      "name" : "Bayern München",
+      "logo" : "./assets-sc/Bayern_Munchen.svg",
+      "primary_color": "#ad0204",
+      "secondary_color": "#ffffff",
+      "players": [
+        {
+          "name": "Manuel Neuer",
+          "shirt_number": "1"
+        },
+        {
+          "name": "Benjamin Pavard",
+          "shirt_number": "5"
+        },
+        {
+          "name": "Javi Martinez",
+          "shirt_number": "8"
+        },
+        {
+          "name": "David Alaba",
+          "shirt_number": "27"
+        },
+        {
+          "name": "Alphonso Davies",
+          "shirt_number": "19"
+        },
+        {
+          "name": "Joshua Kimmich",
+          "shirt_number": "32"
+        },
+        {
+          "name": "Thomas Müller",
+          "shirt_number": "25"
+        },
+        {
+          "name": "Serge Gnabry",
+          "shirt_number": "22"
+        },
+        {
+          "name": "Leon Goretzka",
+          "shirt_number": "18"
+        },
+        {
+          "name": "Kingsley Coman",
+          "shirt_number": "29"
+        },
+        {
+          "name": "Robert Lewandowski",
+          "shirt_number": "9"
+        },
+        {
+          "name": "Sven Ulreich",
+          "shirt_number": "26"
+        },
+        {
+          "name": "Lars Lukas Mai",
+          "shirt_number": "33"
+        },
+        {
+          "name": "Thiago",
+          "shirt_number": "6"
+        },
+        {
+          "name": "Corentin Tolisso",
+          "shirt_number": "24"
+        },
+        {
+          "name": "Philippe Coutinho",
+          "shirt_number": "10"
+        },
+        {
+          "name": "Ivan Perišić",
+          "shirt_number": "14"
+        },
+        {
+          "name": "Michaël Cuisance",
+          "shirt_number": "11"
+        }
+      ]
+    },
+    {
+      "name" : "Dortmund",
+      "logo" : "./assets-sc/Dortmund.svg",
+      "primary_color": "#000",
+      "secondary_color": "#ffff00",
+      "players" : [
+        {
+          "name": "Roman Bûrki",
+          "shirt_number": "1"
+        },
+        {
+          "name": "Dan-Axel Zagadou",
+          "shirt_number": "2"
+        },
+        {
+          "name": "Achraf Hakimi",
+          "shirt_number": "5"
+        },
+        {
+          "name": "Thomas Delaney",
+          "shirt_number": "6"
+        },
+        {
+          "name": "Jadon Sancho",
+          "shirt_number": "7"
+        },
+        {
+          "name": "Mahmoud Dahoud",
+          "shirt_number": "8"
+        },
+        {
+          "name": "Mario Götze",
+          "shirt_number": "10"
+        },
+        {
+          "name": "Marco Reus",
+          "shirt_number": "11"
+        },
+        {
+          "name": "Raphaël Guerreiro",
+          "shirt_number": "13"
+        },
+        {
+          "name": "Nico Schulz",
+          "shirt_number": "14"
+        },
+        {
+          "name": "Mats Hummels",
+          "shirt_number": "15"
+        },
+        {
+          "name": "Manuel Akanji",
+          "shirt_number": "16"
+        },
+        {
+          "name": "Erling Braut",
+          "shirt_number": "17"
+        },
+        {
+          "name": "Leonardo Balerdi",
+          "shirt_number": "18"
+        },
+        {
+          "name": "Julian Brandt",
+          "shirt_number": "19"
+        },
+        {
+          "name": "Mateu Morey",
+          "shirt_number": "22"
+        },
+        {
+          "name": "Thorgan Hazard",
+          "shirt_number": "23"
+        },
+        {
+          "name": "Luca Unbehaun",
+          "shirt_number": "25"
+        },
+        {
+          "name": "Łukasz Piszczek",
+          "shirt_number": "26"
+        },
+        {
+          "name": "Emre Can",
+          "shirt_number": "27"
+        },
+        {
+          "name": "Axel Witsel",
+          "shirt_number": "28"
+        }
+      ]
+    }
+  ]
+}

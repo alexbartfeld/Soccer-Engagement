@@ -23,9 +23,9 @@ export class ScoreBoard {
   render() {
     return (
       <Host>
-        <vff-score-board-item class='home_team' props={this.home_team}/>
+        <vff-score-board-item class='home_team' namespace="home" props={this.home_team}/>
         <span>-</span>
-        <vff-score-board-item class='away_team' props={this.away_team}/>
+        <vff-score-board-item class='away_team' namespace="away" props={this.away_team}/>
       </Host>
     );
   }
