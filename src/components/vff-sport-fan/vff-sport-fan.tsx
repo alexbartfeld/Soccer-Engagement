@@ -4,7 +4,8 @@ import {Host, Component, h, Element, Prop} from '@stencil/core';
 import {routes} from "../../routes/routes";
 import {configureStore} from "../../store";
 // Actions
-import {setTeamsInitialData} from '../../store/actions/score-board';
+declare var vff: any;
+import {SetScore} from '../../store/actions/';
 
 @Component({
   tag: 'vff-sport-fan',
@@ -12,7 +13,7 @@ import {setTeamsInitialData} from '../../store/actions/score-board';
   shadow: true
 })
 export class VffSportFan {
-  setTeamsInitialData: typeof setTeamsInitialData;
+  SetScore: typeof SetScore;
 
   @Element() el: HTMLElement;
 
@@ -20,8 +21,16 @@ export class VffSportFan {
   store: Store;
 
   async componentWillLoad() {
-    this.store.mapDispatchToProps(this, {setTeamsInitialData});
+    this.store.mapDispatchToProps(this, {SetScore});
     this.store.setStore(configureStore({}));
+
+    vff.registerControl("score", 0, {group: 'home'}).on(e => {
+      this.SetScore(true, e.data);
+    });
+
+    vff.registerControl("score", 0, {group: 'away'}).on(e => {
+      this.SetScore(false, e.data);
+    });
   }
 
   render() {

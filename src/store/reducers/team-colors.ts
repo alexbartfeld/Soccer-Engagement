@@ -3,14 +3,10 @@ import {TypeKeys} from "../actions";
 const getInitialState = () => {
   return {
     "home": {
-      "name": "Bayern München",
-      "score": "0",
-      "img_src": "./assets-sc/Bayern_Munchen.svg"
+      color: '#FFF'
     },
     "away": {
-      "name": "Dortmund",
-      "score": "0",
-      "img_src": "./assets-sc/Dortmund.svg"
+      color: '#FFF'
     }
   };
 };
