@@ -48,6 +48,7 @@ vff-score-board:after {
   height: 90px;
   width: 90px;
   background: #013e55;
+  border: 1px solid var(--color-2);
   border-radius: 50%;
   transition: left 500ms ease-out;
 }
