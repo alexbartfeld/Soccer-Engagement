@@ -60,7 +60,7 @@ vff-tabs {
 
 @media (orientation: landscape) {
   vff-sport-fan {
-    /*height: 100%;*/
+    top: 0;
   }
 
   vff-tabs,

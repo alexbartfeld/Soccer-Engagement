@@ -76,8 +76,8 @@ vff-score-board:after {
 
   #feature-toggle-back {
     position: absolute;
-    right: -25px;
-    top: 50%;
+    right: -60px;
+    top: 43vh;
     border-radius: 50%;
     background-color: var(--background-color-2);
     height: 60px;
@@ -91,5 +91,11 @@ vff-score-board:after {
     display: inline-block;
     height: 30px;
     width: 30px;
+  }
+}
+
+@media (orientation: landscape) {
+  main{
+    height: calc(100vh - var(--tabs-height));
   }
 }
