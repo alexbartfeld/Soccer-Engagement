@@ -1,4 +1,6 @@
-import {Component, Host, h, State} from '@stencil/core';
+import {Component, Host, h, State, Prop} from '@stencil/core';
+import {Store, Unsubscribe} from "@stencil/redux";
+import {TeamsLineUp} from './models/team-line-up.model';
 
 function lineUpItem(player, color, setColor, isLeft) {
   const c = setColor ? `linear-gradient(${isLeft ? '270' : '90'}deg, rgba(0, 0, 0, 0) 0%, ${color} 100%)` : 'transparent';
@@ -15,16 +17,39 @@ function lineUpItem(player, color, setColor, isLeft) {
   shadow: true
 })
 export class TeamLineUp {
-  @State() teamsLineUp;
+  private storeUnsubscribe: Unsubscribe;
+
+  @State() teamsLineUp: TeamsLineUp = {
+    home: {players: [], team_color: '#000'},
+    away: {players: [], team_color: '#000'}
+  };
+  @State() teamColor;
+
+  @Prop({context: "store"})
+  store: Store;
 
   componentWillLoad() {
-    return fetch('./build/mocks/teams_lineup.json')
+    this.storeUnsubscribe = this.store.mapStateToProps(this, (state) => {
+      const {teamColor} = state;
+      this.teamsLineUp = {
+        ...this.teamsLineUp,
+        home: {...this.teamsLineUp.home, team_color: teamColor.home.color},
+        away: {...this.teamsLineUp.away, team_color: teamColor.away.color}
+      };
+      return {teamColor};
+    });
+
+    /*return fetch('./build/mocks/teams_lineup.json')
       .then(response => response.json())
       .then(json => {
         this.teamsLineUp = json;
       }).catch(err => {
         return err;
-      });
+      });*/
+  }
+
+  componentDidUnload() {
+    this.storeUnsubscribe();
   }
 
   render() {

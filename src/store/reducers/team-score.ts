@@ -3,19 +3,15 @@ import {TypeKeys} from "../actions";
 const getInitialState = () => {
   return {
     "home": {
-      "name": "Bayern München",
-      "score": "0",
-      "img_src": "./assets-sc/Bayern_Munchen.svg"
+      score: 0
     },
     "away": {
-      "name": "Dortmund",
-      "score": "0",
-      "img_src": "./assets-sc/Dortmund.svg"
+      score: 0
     }
   };
 };
 
-const scoreBoard = (
+const teamScore = (
   state = getInitialState(),
   action: any /*for now...*/
 ) => {
@@ -32,4 +28,4 @@ const scoreBoard = (
   return state;
 };
 
-export default scoreBoard;
+export default teamScore;

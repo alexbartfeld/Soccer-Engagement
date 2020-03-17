@@ -9,21 +9,30 @@ import {Store, Unsubscribe} from "@stencil/redux";
 export class ScoreBoard {
   private storeUnsubscribe: Unsubscribe;
 
-  @State() scoreBoard = {};
+  @State() teamScore;
 
   @Prop({context: "store"})
   store: Store;
 
-  @State() home_team = {};
-  @State() away_team = {};
+  @State() home_team: { name: '', score: '', img_src: '' };
+  @State() away_team: { name: '', score: '', img_src: '' };
 
   componentWillLoad() {
     this.storeUnsubscribe = this.store.mapStateToProps(this, (state) => {
-      const {scoreBoard} = state;
-      this.home_team = scoreBoard.home;
-      this.away_team = scoreBoard.away;
-      return {scoreBoard};
+      const {teamScore} = state;
+      this.home_team = {...this.home_team, score: teamScore.home.score};
+      this.away_team = {...this.away_team, score: teamScore.away.score};
+      return {teamScore};
     });
+/*
+    return fetch('./build/mocks/score_board.json')
+      .then(response => response.json())
+      .then(json => {
+        this.home_team = json.home;
+        this.away_team = json.away;
+      }).catch(err => {
+        return err;
+      });*/
   }
 
   componentDidUnload() {

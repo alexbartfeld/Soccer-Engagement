@@ -5,7 +5,7 @@ import {routes} from "../../routes/routes";
 import {configureStore} from "../../store";
 // Actions
 declare var vff: any;
-import {SetScore} from '../../store/actions/';
+import {SetScore, SetColor} from '../../store/actions/';
 
 @Component({
   tag: 'vff-sport-fan',
@@ -14,6 +14,7 @@ import {SetScore} from '../../store/actions/';
 })
 export class VffSportFan {
   SetScore: typeof SetScore;
+  SetColor: typeof SetColor;
 
   @Element() el: HTMLElement;
 
@@ -21,15 +22,23 @@ export class VffSportFan {
   store: Store;
 
   async componentWillLoad() {
-    this.store.mapDispatchToProps(this, {SetScore});
+    this.store.mapDispatchToProps(this, {SetScore, SetColor});
     this.store.setStore(configureStore({}));
 
     vff.registerControl("score", 0, {group: 'home'}).on(e => {
       this.SetScore(true, e.data);
     });
 
+    vff.registerControl("color", 0, {group: 'home', ui: {type: 'color'}}).on(e => {
+      this.SetColor(true, e.data);
+    });
+
     vff.registerControl("score", 0, {group: 'away'}).on(e => {
       this.SetScore(false, e.data);
+    });
+
+    vff.registerControl("color", 0, {group: 'away', ui: {type: 'color'}}).on(e => {
+      this.SetColor(false, e.data);
     });
   }
 

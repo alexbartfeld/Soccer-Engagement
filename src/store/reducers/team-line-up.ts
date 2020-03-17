@@ -3,15 +3,15 @@ import {TypeKeys} from "../actions";
 const getInitialState = () => {
   return {
     "home": {
-      color: '#FFF'
+      score: 0
     },
     "away": {
-      color: '#FFF'
+      score: 0
     }
   };
 };
 
-const scoreBoard = (
+const teamLineUp = (
   state = getInitialState(),
   action: any /*for now...*/
 ) => {
@@ -28,4 +28,4 @@ const scoreBoard = (
   return state;
 };
 
-export default scoreBoard;
+export default teamLineUp;

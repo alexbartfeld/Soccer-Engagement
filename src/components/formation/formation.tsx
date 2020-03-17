@@ -1,4 +1,6 @@
-import {Component, Host, h, State, getAssetPath, Element} from '@stencil/core';
+import {Component, Host, h, State, getAssetPath, Element, Prop} from '@stencil/core';
+import {Store, Unsubscribe} from "@stencil/redux";
+// models
 import {TeamFormation, TeamPlayer} from "./models/formation-models";
 
 function nameFormat(name) {
@@ -17,20 +19,54 @@ function nameFormat(name) {
   assetsDirs: ['assets-fr']
 })
 export class Formation {
-  @State() leftTeam: TeamFormation;
-  @State() rightTeam: TeamFormation;
+  private storeUnsubscribe: Unsubscribe;
+
+  @State() leftTeam: TeamFormation = {
+    team_color: '',
+    goal_keeper: {
+      name: '',
+      shirt_number: ''
+    },
+    formation_details: [],
+    formation: ''
+  };
+  @State() rightTeam: TeamFormation = {
+    team_color: '',
+    goal_keeper: {
+      name: '',
+      shirt_number: ''
+    },
+    formation_details: [],
+    formation: ''
+  };
+
+  @State() teamColor;
+
+  @Prop({context: "store"})
+  store: Store;
 
   @Element() el: HTMLElement;
 
   componentWillLoad() {
-    return fetch('./build/mocks/teams_formation.json')
-      .then(response => response.json())
-      .then(json => {
-        this.leftTeam = json.leftTeam;
-        this.rightTeam = json.rightTeam;
-      }).catch(err => {
-        return err;
-      });
+    this.storeUnsubscribe = this.store.mapStateToProps(this, (state) => {
+      const {teamColor} = state;
+      this.leftTeam = {...this.leftTeam, team_color: teamColor.home.color};
+      this.rightTeam = {...this.rightTeam, team_color: teamColor.away.color};
+      return {teamColor};
+    });
+    /*
+        return fetch('./build/mocks/teams_formation.json')
+          .then(response => response.json())
+          .then(json => {
+            this.leftTeam = json.leftTeam;
+            this.rightTeam = json.rightTeam;
+          }).catch(err => {
+            return err;
+          });*/
+  }
+
+  componentDidUnload() {
+    this.storeUnsubscribe();
   }
 
   renderFormation(team: TeamFormation) {

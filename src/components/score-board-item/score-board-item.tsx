@@ -13,7 +13,7 @@ export class ScoreBoardItem {
     const {name, score, img_src} = this.props;
     return (
       <Host>
-        <div id='logo'><img src={getAssetPath(img_src)}/></div>
+        <div id='logo'><img alt='TEAM LOGO' src={getAssetPath(img_src)}/></div>
         <div id='name'>{name}</div>
         <div id='score'>{score}</div>
       </Host>
