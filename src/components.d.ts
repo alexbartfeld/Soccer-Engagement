@@ -19,6 +19,7 @@ export namespace Components {
     'namespace': any;
     'props': any;
   }
+  interface VffSocialEmbed {}
   interface VffSportFan {}
   interface VffStatItem {
     'props': any;
@@ -63,6 +64,12 @@ declare global {
   var HTMLVffScoreBoardItemElement: {
     prototype: HTMLVffScoreBoardItemElement;
     new (): HTMLVffScoreBoardItemElement;
+  };
+
+  interface HTMLVffSocialEmbedElement extends Components.VffSocialEmbed, HTMLStencilElement {}
+  var HTMLVffSocialEmbedElement: {
+    prototype: HTMLVffSocialEmbedElement;
+    new (): HTMLVffSocialEmbedElement;
   };
 
   interface HTMLVffSportFanElement extends Components.VffSportFan, HTMLStencilElement {}
@@ -117,6 +124,7 @@ declare global {
     'vff-loader': HTMLVffLoaderElement;
     'vff-score-board': HTMLVffScoreBoardElement;
     'vff-score-board-item': HTMLVffScoreBoardItemElement;
+    'vff-social-embed': HTMLVffSocialEmbedElement;
     'vff-sport-fan': HTMLVffSportFanElement;
     'vff-stat-item': HTMLVffStatItemElement;
     'vff-stats': HTMLVffStatsElement;
@@ -136,6 +144,7 @@ declare namespace LocalJSX {
     'namespace'?: any;
     'props'?: any;
   }
+  interface VffSocialEmbed {}
   interface VffSportFan {}
   interface VffStatItem {
     'props'?: any;
@@ -159,6 +168,7 @@ declare namespace LocalJSX {
     'vff-loader': VffLoader;
     'vff-score-board': VffScoreBoard;
     'vff-score-board-item': VffScoreBoardItem;
+    'vff-social-embed': VffSocialEmbed;
     'vff-sport-fan': VffSportFan;
     'vff-stat-item': VffStatItem;
     'vff-stats': VffStats;
@@ -180,6 +190,7 @@ declare module "@stencil/core" {
       'vff-loader': LocalJSX.VffLoader & JSXBase.HTMLAttributes<HTMLVffLoaderElement>;
       'vff-score-board': LocalJSX.VffScoreBoard & JSXBase.HTMLAttributes<HTMLVffScoreBoardElement>;
       'vff-score-board-item': LocalJSX.VffScoreBoardItem & JSXBase.HTMLAttributes<HTMLVffScoreBoardItemElement>;
+      'vff-social-embed': LocalJSX.VffSocialEmbed & JSXBase.HTMLAttributes<HTMLVffSocialEmbedElement>;
       'vff-sport-fan': LocalJSX.VffSportFan & JSXBase.HTMLAttributes<HTMLVffSportFanElement>;
       'vff-stat-item': LocalJSX.VffStatItem & JSXBase.HTMLAttributes<HTMLVffStatItemElement>;
       'vff-stats': LocalJSX.VffStats & JSXBase.HTMLAttributes<HTMLVffStatsElement>;

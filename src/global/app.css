@@ -45,7 +45,6 @@ body {
 }
 
 vff-sport-fan {
-  position: relative;
   height: 70vh;
   bottom: -30vh;
 }
@@ -57,4 +56,22 @@ vff-tabs {
   right: 0;
   height: var(--tabs-height);
   z-index: 100;
+}
+
+@media (orientation: landscape) {
+  vff-sport-fan {
+    /*height: 100%;*/
+  }
+
+  vff-tabs,
+  vff-sport-fan {
+    transition: left 300ms ease-out;
+    width: 50Vw;
+    left: -100vw;
+  }
+
+  .show vff-tabs,
+  vff-sport-fan.show {
+    left: 0;
+  }
 }

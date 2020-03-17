@@ -1,6 +1,8 @@
 :host {
   display: block;
   user-select: none;
+  will-change: auto;
+  position: relative;
 }
 
 main {
@@ -21,7 +23,7 @@ main {
   overflow-x: hidden;
 }
 
-vff-score-board{
+vff-score-board {
   box-shadow: 0 16px 20px rgba(255, 255, 255, 0.1);
 }
 
@@ -32,4 +34,61 @@ vff-score-board:after {
   height: 2px;
   width: 100%;
   background-image: radial-gradient(circle, rgba(4, 102, 122, 1) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+#feature-toggle {
+  will-change: auto;
+  z-index: 10;
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  background: #013e55;
+  border-radius: 50%;
+  transition: left 500ms ease-out;
+}
+
+#feature-toggle.hide {
+  z-index: -1;
+  left: -100vw;
+}
+
+#feature-toggle__image {
+  display: block;
+  height: 60px;
+  width: 60px;
+  transform: scaleX(-1);
+}
+
+#feature-toggle-back {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  #feature-toggle {
+    display: flex;
+  }
+
+  #feature-toggle-back {
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    border-radius: 50%;
+    background-color: var(--background-color-2);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #feature-toggle-back__image {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+  }
 }
