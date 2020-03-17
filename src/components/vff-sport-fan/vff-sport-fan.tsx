@@ -18,12 +18,12 @@ export class VffSportFan {
 
   toggleSportsFan() {
     this.featureActive = !this.featureActive;
-    this.el.classList.toggle('show');
+    // this.el.classList.toggle('show');
   }
 
   render() {
     return (
-      <Host>
+      <Host class={this.featureActive ? 'show' : ''}>
         <main>
           <vff-score-board/>
           <div id='engagement-feature'>

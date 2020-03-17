@@ -9,6 +9,11 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Yantramanav&display=swap');
 
+html,
+body{
+  min-height: 100vh;
+}
+
 :root {
   --color-1: #474e5d;
   --color-2: #fff;
@@ -58,7 +63,7 @@ vff-tabs {
   z-index: 100;
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 1024px){
   vff-sport-fan {
     top: 0;
   }
