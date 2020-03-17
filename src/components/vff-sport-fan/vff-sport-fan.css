@@ -54,7 +54,7 @@ vff-score-board:after {
 }
 
 #feature-toggle.hide {
-  z-index: -1;
+  visibility: hidden;
   left: -100vw;
 }
 
