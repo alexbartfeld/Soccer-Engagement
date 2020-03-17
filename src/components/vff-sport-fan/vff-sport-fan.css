@@ -45,8 +45,8 @@ vff-score-board:after {
   display: none;
   justify-content: center;
   align-items: center;
-  height: 90px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
   background: #013e55;
   border: 1px solid var(--color-2);
   border-radius: 50%;
