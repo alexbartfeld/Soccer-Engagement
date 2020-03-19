@@ -42,7 +42,7 @@ export class SocialEmbed {
     return (
       <Host>
         {this.isHidden ? <vff-loader/> : null}
-        <div id='twitter'>
+        <div id='twitter' class={this.isHidden ? 'hidden' : ''}>
           <a class="twitter-timeline" data-width="1200" data-theme="dark"
              href="https://twitter.com/GGFN_?ref_src=twsrc%5Etfw">Tweets by GGFN_</a>
         </div>
