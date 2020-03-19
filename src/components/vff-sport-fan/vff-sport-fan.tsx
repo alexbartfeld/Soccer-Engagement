@@ -39,9 +39,7 @@ export class VffSportFan {
           </div>
         </main>
         <slot></slot>
-        <div id='feature-toggle-back' onClick={this.toggleSportsFan}>
-          <img id='feature-toggle-back__image' alt='close' src={getAssetPath('./assets-sp/back.svg')}/>
-        </div>
+        <div id='feature-toggle-back' onClick={this.toggleSportsFan}>&#10005;</div>
         <div class={this.featureActive ? 'hide' : ''} id='feature-toggle' onClick={this.toggleSportsFan}>
           <img id='feature-toggle__image' alt='open' src={getAssetPath('./assets-sp/goal.svg')}/>
         </div>
