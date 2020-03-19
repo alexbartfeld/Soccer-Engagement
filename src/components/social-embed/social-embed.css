@@ -1,0 +1,17 @@
+:host {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+#twitter {
+  visibility: hidden;
+}
+
+vff-loader {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

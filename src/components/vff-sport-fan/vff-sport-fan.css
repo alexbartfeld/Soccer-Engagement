@@ -18,7 +18,8 @@ main {
 
 #engagement-feature vff-time-line,
 #engagement-feature vff-team-line-up,
-#engagement-feature vff-stats {
+#engagement-feature vff-stats,
+#engagement-feature vff-social-embed {
   overflow-y: scroll;
   overflow-x: hidden;
 }
