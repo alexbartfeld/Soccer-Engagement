@@ -11,7 +11,9 @@
 
 html,
 body {
+  min-width: 100%;
   min-height: 100vh;
+  height: 100vh;
 }
 
 :root {
@@ -44,6 +46,8 @@ body {
 }
 
 body {
+  overflow: hidden;
+  position: fixed;
   background-color: green;
   margin: 0;
   padding: 0;
