@@ -76,8 +76,8 @@ vff-score-board:after {
 
   #feature-toggle-back {
     position: absolute;
-    right: -60px;
-    top: 43vh;
+    right: -68px;
+    top: 7px;
     border-radius: 50%;
     background-color: var(--background-color-2);
     height: 60px;
