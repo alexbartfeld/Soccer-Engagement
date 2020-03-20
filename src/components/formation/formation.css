@@ -73,11 +73,10 @@
   background-color: black;
   position: relative;
   display: inline-block;
-  width: calc(12px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
-  height: 0;
-  padding: 50% 9%;
+  width: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+  height: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
   border-radius: 50%;
-  line-height: 0;
   text-align: center;
   border: 1px solid var(--color-2);
 }
@@ -85,6 +84,6 @@
 .player:after {
   content: attr(data-name);
   position: absolute;
-  bottom: calc(-1 * (12px + (14 - 14) * ((100vw - 300px) / (1600 - 300))));
+  bottom: -20px;
   right: -8px;
 }
