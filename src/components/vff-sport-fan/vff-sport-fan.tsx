@@ -16,9 +16,19 @@ export class VffSportFan {
     this.toggleSportsFan = this.toggleSportsFan.bind(this);
   }
 
-  toggleSportsFan() {
+  connectedCallback() {
+    document.body.addEventListener('click', (e) => {
+      this.featureActive && this.toggleSportsFan(e);
+    });
+    // prevent click on feature from closing itself
+    this.el.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  }
+
+  toggleSportsFan(e) {
+    e.stopPropagation(); // prevent click form propagation to body
     this.featureActive = !this.featureActive;
-    // this.el.classList.toggle('show');
   }
 
   render() {
