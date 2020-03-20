@@ -55,8 +55,8 @@ body {
 }
 
 vff-sport-fan {
-  height: 70vh;
-  bottom: -30vh;
+  height: calc(100vh - 56.25vw);
+  bottom: -56.25vw;
 }
 
 vff-tabs {
