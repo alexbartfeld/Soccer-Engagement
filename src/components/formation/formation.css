@@ -1,4 +1,5 @@
 :host {
+  --formation-circle-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
   display: block;
   color: var(--color-2);
 }
@@ -73,9 +74,9 @@
   background-color: black;
   position: relative;
   display: inline-block;
-  width: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
-  height: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+  width: var(--formation-circle-size);
+  height: var(--formation-circle-size);
+  line-height: var(--formation-circle-size);
   border-radius: 50%;
   text-align: center;
   border: 1px solid var(--color-2);
