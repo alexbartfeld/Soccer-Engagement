@@ -68,7 +68,7 @@ vff-tabs {
   z-index: 100;
 }
 
-@media (orientation: landscape) and (max-width: 1024px) {
+@media (orientation: landscape) {
   vff-sport-fan {
     top: 0;
   }

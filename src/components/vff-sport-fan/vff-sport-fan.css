@@ -70,7 +70,7 @@ vff-score-board:after {
   display: none;
 }
 
-@media (orientation: landscape) and (max-width: 1024px) {
+@media (orientation: landscape) {
   #feature-toggle {
     display: flex;
   }
