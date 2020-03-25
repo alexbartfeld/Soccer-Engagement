@@ -13,7 +13,6 @@ export class Tabs {
 
   @Listen('click')
   handleTabClick(e) {
-    this.route = e.target.getAttribute('route');
     Array.prototype.forEach.call(this.el.children, (tab) => {
       tab.classList.remove('active')
     });
